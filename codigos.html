@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laudo de Ultrassom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Laudo de Ultrassom</h1>
+    <form id="ultrasound-report-form">
+        <label for="orgao">Órgão:</label>
+        <select id="orgao" name="orgao"><option value="">Selecione...</option></select>
+        <label for="codigo">Código:</label>
+        <select id="codigo" name="codigo"><option value="">Selecione...</option></select>
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        <label for="impressao_diagnostica">Impressão Diagnóstica:</label>
+        <textarea id="impressao_diagnostica" name="impressao_diagnostica" readonly></textarea>
+        <input type="submit" value="Gerar Laudo">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
